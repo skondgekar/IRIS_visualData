@@ -31,11 +31,6 @@ app.post("/getDimentions",function(req, res){
 })
 
 app.use("/",express.static("../public"));
-app.get("/",function(req, res){
-    var Blank = path.resolve(__dirname+"/../public/blank.html");
-    console.log("Hello I am changed");
-    res.sendFile(Blank);
-})
 
 var server = app.listen(3002, function(){
     var host = 'localhost';
